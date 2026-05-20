@@ -218,14 +218,14 @@ function About() {
         <div className="space-y-6 text-lg leading-relaxed text-muted-foreground lg:col-span-7">
           <Reveal delay={100}>
             <p>
-              A Outlier Running nasceu da paixão real pela corrida. Começou em
-              2016, no Parque Barigui, quando o fundador percebeu que não
-              conseguia completar uma volta sequer caminhando sem cansar.
+              A Outlier Running nasceu da paixão real pela corrida e da pele em risco.
+              De quem não conseguia dar uma volta caminhando no Parque Barigui em 2016 
+              para uma maratona sub-3h30.
             </p>
           </Reveal>
           <Reveal delay={200}>
             <p>
-              Observando corredores treinando no parque, surgiu a vontade de
+              Observando corredores treinando, surgiu a vontade de
               descobrir <span className="text-foreground">até onde o corpo poderia chegar</span>.
               Hoje, essa busca virou método — e o método virou assessoria.
             </p>
@@ -390,8 +390,8 @@ function Plans() {
           <Reveal delay={100}>
             <PlanCard
               tag="Plano 01"
-              title="Online"
-              subtitle="Treine onde estiver. Com método."
+              title="Assessoria de Corrida"
+              subtitle="Treine onde estiver (Online) ou com a gente no parque."
               items={[
                 "Planilha 100% personalizada",
                 "Acompanhamento mensal",
@@ -400,7 +400,7 @@ function Plans() {
                 "Feedback semanal",
                 "Acesso futuro à plataforma com educativos, alongamento, aquecimento e desaquecimento",
               ]}
-              ideal="Para quem treina sozinho e quer evoluir com flexibilidade."
+              ideal="Para quem treina sozinho (Online) ou presencial sem funcional."
             />
           </Reveal>
 
@@ -1090,14 +1090,28 @@ function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto mt-16 max-w-7xl border-t border-border px-6 pt-8">
-        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-          <p className="font-display text-sm uppercase tracking-[0.25em] text-muted-foreground">
-            Outlier Running — <span className="text-gold">evolução constante.</span>
-          </p>
-          <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Outlier Running. Todos os direitos reservados.
-          </p>
+      <div className="mx-auto mt-16 max-w-7xl border-t border-border px-6 pt-8 pb-8">
+        <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
+          
+          <div className="flex-1 flex justify-start">
+            <p className="font-display text-sm uppercase tracking-[0.25em] text-muted-foreground text-center sm:text-left">
+              Outlier Running — <span className="text-gold">evolução constante.</span>
+            </p>
+          </div>
+
+          <div className="flex-1 flex justify-center text-[11px] font-sans tracking-wider text-muted-foreground items-center gap-1 select-none">
+            <span>Designed by</span>
+            <a href="https://www.linkedin.com/in/lucas-kumegawa/" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center text-muted-foreground transition-all duration-300 hover:text-foreground">
+              <span className="font-oleo text-[16px] text-primary tracking-normal normal-case transition-all duration-300 group-hover:text-gold">Lucas Kumegawa</span>
+            </a>
+          </div>
+
+          <div className="flex-1 flex justify-end">
+            <p className="text-xs text-muted-foreground text-center sm:text-right">
+              © {new Date().getFullYear()} Outlier Running. Todos os direitos reservados.
+            </p>
+          </div>
+
         </div>
       </div>
     </footer>
