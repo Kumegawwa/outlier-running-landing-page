@@ -1102,7 +1102,7 @@ function Footer() {
           <div className="flex-1 flex justify-center text-[11px] font-sans tracking-wider text-muted-foreground items-center gap-1 select-none">
             <span>Designed by</span>
             <a href="https://www.linkedin.com/in/lucas-kumegawa/" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center text-muted-foreground transition-all duration-300 hover:text-foreground">
-              <span className="font-oleo text-[16px] text-primary tracking-normal normal-case transition-all duration-300 group-hover:text-gold">Lucas Kumegawa</span>
+              <span className="font-oleo text-[16px] text-primary tracking-normal normal-case transition-all duration-300 group-hover:text-gold">Kumegawa</span>
             </a>
           </div>
 
