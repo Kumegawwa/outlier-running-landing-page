@@ -156,21 +156,21 @@ function Hero() {
         {/* Stat column */}
         <div className="lg:col-span-4 lg:pt-12">
           <Reveal delay={500}>
-            <div className="grid grid-cols-3 gap-4 lg:grid-cols-1 lg:gap-6">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 lg:grid-cols-1 lg:gap-6">
               {[
                 { v: "10.158", l: "km corridos", small: "+" },
                 { v: "1.162", l: "corridas registradas", small: "+" },
-                { v: "8", l: "anos na corrida", small: "+" },
+                { v: "9", l: "anos na corrida", small: "+" },
               ].map((s) => (
                 <div
                   key={s.l}
-                  className="relative overflow-hidden rounded-xl border border-border bg-card/40 p-5 backdrop-blur transition-colors hover:border-gold/40"
+                  className="relative flex flex-col items-center justify-center overflow-hidden rounded-xl border border-border bg-card/40 p-2.5 text-center backdrop-blur transition-colors hover:border-gold/40 sm:p-5 lg:block lg:text-left"
                 >
-                  <div className="font-display text-4xl text-gradient-gold lg:text-5xl">
+                  <div className="font-display text-2xl leading-none text-gradient-gold sm:text-4xl lg:text-5xl">
                     {s.small}
                     {s.v}
                   </div>
-                  <div className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">
+                  <div className="mt-1.5 text-[9px] leading-tight uppercase tracking-widest text-muted-foreground sm:text-xs">
                     {s.l}
                   </div>
                 </div>
@@ -312,7 +312,7 @@ function Coach() {
               Treinado por quem <span className="text-gradient-gold">vive</span> a corrida.
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              Estudante de Educação Física na Universidade Positivo, mais de 8
+              Estudante de Educação Física na Universidade Positivo, mais de 9
               anos de corrida no asfalto e na pista. Cada planilha que sai
               daqui passou primeiro pelas pernas de quem a escreveu.
             </p>
@@ -340,7 +340,7 @@ function Coach() {
             <div className="mt-10 flex flex-wrap gap-6 text-sm text-muted-foreground">
               <Stat icon={Activity} v="10.158+" l="km registrados" />
               <Stat icon={Zap} v="1.162+" l="corridas no Strava" />
-              <Stat icon={HeartPulse} v="8+ anos" l="de experiência prática" />
+              <Stat icon={HeartPulse} v="9+ anos" l="de experiência prática" />
             </div>
           </Reveal>
         </div>
@@ -608,7 +608,7 @@ function Location() {
                 <div className="font-display text-3xl">Parque Barigui</div>
               </div>
               <a
-                href="https://maps.google.com/?q=Parque+Barigui+Curitiba"
+                href="https://goo.gl/maps/YOUR_REAL_LINK"
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-md border border-gold/40 bg-background/60 px-4 py-2 text-xs font-bold uppercase tracking-wider text-gold backdrop-blur hover:bg-gold/10"
@@ -691,7 +691,7 @@ function Numbers() {
   const data = [
     { v: 10158, suffix: "+", l: "km corridos" },
     { v: 1162, suffix: "+", l: "corridas registradas" },
-    { v: 8, suffix: "+", l: "anos treinando" },
+    { v: 9, suffix: "+", l: "anos treinando" },
     { v: 30, suffix: "+", l: "provas concluídas" },
   ];
   return (
@@ -1102,7 +1102,7 @@ function Footer() {
           <div className="flex-1 flex justify-center text-[11px] font-sans tracking-wider text-muted-foreground items-center gap-1 select-none">
             <span>Designed by</span>
             <a href="https://www.linkedin.com/in/lucas-kumegawa/" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center text-muted-foreground transition-all duration-300 hover:text-foreground">
-              <span className="font-oleo text-[16px] text-primary tracking-normal normal-case transition-all duration-300 group-hover:text-gold">Kumegawa</span>
+              <span className="font-oleo text-[16px] text-primary tracking-normal normal-case transition-all duration-300 group-hover:text-gold">Lucas Kumegawa</span>
             </a>
           </div>
 
